@@ -5,6 +5,7 @@ image:
 tasks:
   - init: |
       sudo mysql -e "CREATE DATABASE IF NOT EXISTS todos"
+      composer install
     command: |
       source ~/.bashrc
       php -S 0.0.0.0:8000 -t public/
