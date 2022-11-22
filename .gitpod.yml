@@ -4,7 +4,6 @@ image:
 #Tasks here are the specific installation of this site, while the Dockerfile is a general Drupal LAMP stack
 tasks:
   - init: |
-      sudo mysql -e "CREATE DATABASE IF NOT EXISTS todos"
       composer install
     command: |
       source ~/.bashrc
