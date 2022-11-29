@@ -4,23 +4,25 @@
 
 {% block body %}
 <div class="container mt-5">
-   <h2 >CRUD with Symfony</h2>
+   <h2>CRUD with Symfony UPDATE</h2>
    <table class="table mt-3">
       <thead>
       <tr>
          <th scope="col">#</th>
          <th scope="col">Name</th>
+         <th scope="col">Price</th>
          <th scope="col">Description</th>
          <th scope="col">Delete</th>
 
       </tr>
       </thead>
       <tbody>
-      {% if products is defined%}
+      {% if products is defined %}
          {% for product in products %}
          <tr>
             <th scope="row">{{ product.id }}</th>
             <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
             <td>{{ product.description }}</td>
             <td><a href="{{ path('delete_product',{id: product.id}) }}" class="text-danger">Delete</a></td>
          </tr>
