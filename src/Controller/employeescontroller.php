@@ -14,7 +14,7 @@ use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 
-class employeescontroller extends AbstractController
+class employees extends AbstractController
 {
     #[Route('/employees', name: 'index')]
     public function index(ManagerRegistry $doctrine): Response
