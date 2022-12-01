@@ -18,7 +18,7 @@
       </thead>
       <tbody>
       {% if employees is defined %}
-         {% for employees in employeesdetailes %}
+         {% for employees in employeescontroller %}
          <tr>
             <th scope="row">{{ employees.id }}</th>
             <td>{{ employee.name }}</td>
@@ -30,6 +30,6 @@
       {% endif %}
       </tbody>
    </table>
-   <a class="btn btn-primary" href="{{ path('create_employeesdetails')}}" role="button">Add a product</a>
+   <a class="btn btn-primary" href="{{ path('create_employeescontroller')}}" role="button">Add a product</a>
 </div>
 {% endblock %}

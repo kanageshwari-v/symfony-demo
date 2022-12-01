@@ -7,7 +7,7 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: employeeRepository::class)]
-class employeesdetails
+class employeescontroller
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -18,10 +18,10 @@ class employeesdetails
     private ?string $name = null;
 
     #[ORM\Column]
-    private ?int $price = null;
+    private ?int $salary = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
-    private ?string $description = null;
+    private ?string $destation = null;
 
     public function getId(): ?int
     {
